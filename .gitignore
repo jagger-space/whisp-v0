@@ -1,3 +1,5 @@
 tickets
 .env*
+!apps/api/.env.example
+!apps/mobile/.env.example
 node_modules/

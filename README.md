@@ -12,4 +12,10 @@ WHISP is a privacy-first, pseudonymous communication app for Android and iOS. It
 
 ## Repository status
 
-These workspaces are scaffolded. Their package manifests do not yet describe implemented application features. Root-level npm workspace configuration and setup commands will be documented here when they are in place.
+The [API workspace](./apps/api/README.md) implements `GET /api/health` and a JSON
+404 fallback, with local startup and request-level checks. API configuration now
+requires an explicit environment and validates enabled-feature credentials through
+a redacted error path; see [configuration](./docs/configuration.md). The contracts workspace
+contains shared types and username validation; the mobile workspace is scaffolded.
+Each implemented package currently has its own setup commands and lockfile.
+Root-level npm workspace configuration remains follow-up work in WHISP-002.

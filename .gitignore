@@ -1,0 +1,3 @@
+tickets
+.env*
+node_modules/
